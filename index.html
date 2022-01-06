@@ -10,52 +10,59 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
+        <link rel="stylesheet" href="style.css">
+            </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- form action where the form data will be stored -->
+        <div class="div1-style">
+            <form action="">
 
-        <form action="">
-
-         <!-- type and text works same diff?  -->
-         <label for="name">Name</label>
-         <!-- name in input helps identify what to store in given action file,way to access -->
-         <div><input type = "text" name = "myname" id="name"></div>  
-         <br>           
-         <div>Email: <input text = "email" name = "myEmail"></div>   
-         <br>
-         <div>DOB: <input type="date" name="dob" id=""></div>  
-         <br>
-         <div>Number: <input type="number" name="num" id=""></div>  
-         <br>
-         <div>
-             <!-- same name-"gender" makes it choose only one -->
-             Gender <br>
-             Male<input type="radio" name="gender" id=""> Female<input type="radio" name="gender" id="">            
-            </div>  
-         <br>
-         <div>Age 18+ <input type="checkbox" name="adult" id="" checked></div>  
-         <br>
-         <div>message<br><textarea name="msg" cols="10" rows="3"></textarea></div>
-         <br>
-         <div>
+                <!-- type and text works same diff?  -->
             
-                 <label for="car">Car</label>
-             <select name="myCar" id="car">
-                 <option value="car1" id="car">Ford</option>
-                 <option value="car2" id="car">TATA</option>
-                 <option value="car3" id="car">Nano</option>
-             </select>
-        </div>
-         <div><input type="reset" value="reset">
-         <input type="submit" value="submit"></div>
-         <br>
-
-        </form>
+                <!-- name in input helps identify what to store in given action file,way to access -->
+                <div class="div2">
+                    <div>Name: <input type = "text" name = "myName" id="name"></div>  
+                <br>           
+                <div>Email: <input text = "email" name = "myEmail"></div>   
+                <br>
+                <div>Dial: <input type="number" name="num" id=""></div>  
+                <br>
+                <div>DOB: <input type="date" name="dob" id="" style="font-weight:900px; font-style: italic;"></div>  
+                <br>
+                <div>
+                    <!-- same name-"gender" makes it choose only one -->
+                    Gender : 
+                    Male<input type="radio" name="gender" id=""> Female<input type="radio" name="gender" id="">            
+                   </div>  
+                <br>
+                <div>Working <input type="checkbox" name="adult" id="" checked></div>  
+                <br>
+                <div>Hobbies<br><textarea name="msg" cols="10" rows="3"></textarea></div>
+                <br>
+                <div>  
+                    <label for="car">Priority</label>
+                    <select name="myCar" id="car" style="font-weight:800px; text-align: center;">
+                        <option value="car1" id="car">Money</option>
+                        <option value="car2" id="car">Respect</option>
+                        <option value="car3" id="car">Fame</option>
+                    </select>
+                <br>
+               </div>
+               <br>
+                <div><input type="reset" value="Reset" class="button1">
     
+                <input type="submit" value="Submit" class="button2"></div>
+                <br>
+                </div>
+               </form>
+
+        </div>
         <script src="" async defer></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
     </body>
 </html>
