@@ -1,0 +1,15 @@
+.form-style{
+    padding: 50px;
+    width: 600px;
+    background-color: rgb(161, 183, 184);
+}
+
+form {
+    margin: auto;
+  }
+
+.div-style{
+    align-content: center;
+    background-color:darkcyan;
+    padding: 50px;
+}

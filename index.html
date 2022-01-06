@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- form action where the form data will be stored -->
+
+        <form action="">
+
+         <!-- type and text works same diff?  -->
+         <label for="name">Name</label>
+         <!-- name in input helps identify what to store in given action file,way to access -->
+         <div><input type = "text" name = "myname" id="name"></div>  
+         <br>           
+         <div>Email: <input text = "email" name = "myEmail"></div>   
+         <br>
+         <div>DOB: <input type="date" name="dob" id=""></div>  
+         <br>
+         <div>Number: <input type="number" name="num" id=""></div>  
+         <br>
+         <div>
+             <!-- same name-"gender" makes it choose only one -->
+             Gender <br>
+             Male<input type="radio" name="gender" id=""> Female<input type="radio" name="gender" id="">            
+            </div>  
+         <br>
+         <div>Age 18+ <input type="checkbox" name="adult" id="" checked></div>  
+         <br>
+         <div>message<br><textarea name="msg" cols="10" rows="3"></textarea></div>
+         <br>
+         <div>
+            
+                 <label for="car">Car</label>
+             <select name="myCar" id="car">
+                 <option value="car1" id="car">Ford</option>
+                 <option value="car2" id="car">TATA</option>
+                 <option value="car3" id="car">Nano</option>
+             </select>
+        </div>
+         <div><input type="reset" value="reset">
+         <input type="submit" value="submit"></div>
+         <br>
+
+        </form>
+    
+        <script src="" async defer></script>
+    </body>
+</html>
