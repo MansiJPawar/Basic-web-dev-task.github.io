@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,14 +23,21 @@
 // 	height = box.height = window.innerHeight;
 // 		render();   
 
-    $(document).keydown(function render(e){
+ $(document).keydown(
+// function(){
+//         var h = window.innerHeight
+//         var w = window.innerWidth
+    
+//         document.getElementById("box").innerHTML=h;
+//         document.getElementById("box").innerHTML=w;
+        
+//         render();
+    function(e){
 
     switch (e.which){
     case 37:    //left arrow key //37 is the key value on keypad
         $(".box").finish().animate({
-        // .stop
-        //   var w = window.innerWidth
-            left: "-=30"
+            left: "-=30"   
         });
         break;
     case 38:    //up arrow key
@@ -49,8 +57,7 @@
         break;
     }
 })
-// }
-;
+    ;
 </script>
 </head>
 <body>

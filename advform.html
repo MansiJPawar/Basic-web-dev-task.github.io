@@ -3,28 +3,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up Form</title>
-        <!-- enchance font style importing link -->
+        <!--  enchance font style importing link -->
         <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style3.css">
     </head>
     <body>
+         <!-- #row 12 -->
       <div class="row">
+        <!-- #col-md stand medium col > 992px -->
       <div class="col-md-12">
       <form action="" method="post">
         <h1> Sign Up </h1>
-        <!-- fieldset to group form elements and diplay as a card/border  -->
+        <!-- fieldset to group form elements and display as a card/border  -->
         <fieldset>
           <!-- legend adds title/caption to the fieldset form -->
           <legend><span class="number">1</span> Your Basic Info</legend>
         
           <label for="name">Name:</label>
+          <!-- type = input type , id =  to reuse/call , name =  define reference value -->
           <input type="text" id="name" name="user_name">
         
           <label for="email">Email:</label>
           <input type="email" id="mail" name="user_email">
        
           <label for="password">Password:</label>
-          <input type="password" id="password"       name="user_password">
+          <input type="password" id="password" name="user_password">
         
           <label>Age:</label>
           <input type="radio" id="under13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
@@ -39,6 +42,7 @@
           <textarea id="bio" name="user_bio"></textarea>   
         
          <label for="job">Job Role:</label>
+         <!-- select = dropdown , optgroup= group option with particular title-->
           <select id="job" name="user_job">
             <optgroup label="Web">
               <option value="frontend_developer">Front-End Developer</option>
@@ -60,6 +64,8 @@
           </select>
           
           <label>Interests:</label>
+          <!--  name attribute is how you reference
+             the input, once the value from the input gets sent back to the server. -->
           <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
           <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
           <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
