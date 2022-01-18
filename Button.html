@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button click event</title>
+</head>
+<body>
+    <div id="box">
+        <img src="/button-1435071.png" style="width: 100px;">
+    </div>
+</body>
+<script>
+    let moveBy = 10;
+    window.addEventListener('load', () => {
+        box.style.position = 'absolute';//stable
+        box.style.left = 0;
+        box.style.top = 0;
+    });
+    // keydown makes smooth move than keyup
+    window.addEventListener('keydown', (e) => {
+        switch (e.which) {
+            case 37 :
+                if (parseInt(box.style.left) != 0) {
+                    box.style.left = parseInt(box.style.left) - moveBy + 'px';
+                    // document.getElementById("box").innerHTML = parseInt(box.style.left) - moveBy + 'px';
+                } else {
+                    alert('This is maximum left')
+                }
+                break;
+            case 39:
+                if (parseInt(box.style.left) <= 1250) {
+                    box.style.left = parseInt(box.style.left) + moveBy + 'px';
+                } else {
+                    alert('This is maximum right')
+                }
+                break;
+            case 38 :
+                if (parseInt(box.style.top) != 0) {
+                    box.style.top = parseInt(box.style.top) - moveBy + 'px';
+                    // document.getElementById("box").innerHTML = parseInt(box.style.top) - moveBy + 'px';
+                } else {
+                    alert('This is maximum top')
+                }
+                break;
+            case 40 :
+                if (parseInt(box.style.top) <= 500) {
+                    box.style.top = parseInt(box.style.top) + moveBy + 'px';   
+                } else {
+                    alert('This is maximum bottom')
+                }
+                break;
+        }
+    });
+</script>
+</html>

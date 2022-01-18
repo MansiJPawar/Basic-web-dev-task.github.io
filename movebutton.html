@@ -11,16 +11,32 @@
         position: relative;
         margin: 200px auto 0;
         background: rgb(13, 8, 51);
+    
     }
 </style>
 <script src="jquery-3.6.0.min.js"></script>
+<script>
+
+</script>
 <script>
 // keydown and animate method
 // window.onload = function () {
 // 	var box = document.getElementById("box"),
 // 	width = box.width = window.innerWidth,
 // 	height = box.height = window.innerHeight;
-// 		render();   
+//  render(); 
+             // keydown and animate method
+        var a = window.innerHeight
+        document.writeln(a);
+        var b = window.innerWidth
+        document.writeln(b);
+        $(document).ready(function() {
+            $("button").click(function() {
+                var position = $(".box").position();
+                document.write(position);
+                alert("Current position of the box is: (left: " + position.left + ", top: " + position.top + ")");
+            });
+        });
 
     $(document).keydown(function render(e){
 
@@ -50,11 +66,20 @@
     }
 })
 // }
+// let elem = document.querySelector('box');
+// let rect = elem.getBoundingClientRect();
+// console.log("x: "+ rect.x);
+// console.log("y: "+ rect.y);
+
 ;
 </script>
+
 </head>
 <body>
     <p><strong>Press the arrow keys to move the box.</strong></p>
-    <div class="box"></div>
+  
+    <div width="400px" height="500px">
+        <div class="box"></div>
+    </div>
 </body>
 </html>
